@@ -106,7 +106,6 @@ header .nav>li>a:hover, .nav>li>a:focus {
 
 .ms_intro .ms_star i {
   margin: 15px;
-  font-size: 2em;
 }
 /* ends portfolio */
 
@@ -190,6 +189,9 @@ footer .company_credits {
     font-style: normal;
     font-size: 2.5em;
     padding: 9px;
+  }
+  .ms_intro .ms_star i {
+    font-size: 2em;
   }
 }
 /* ends media query */
