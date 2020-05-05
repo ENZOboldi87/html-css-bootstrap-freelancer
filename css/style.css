@@ -1,0 +1,129 @@
+/* general rules */
+body {
+  padding-top: 70px;
+}
+
+.wrapper_70 {
+  width: 65%;
+  margin: 0 auto;
+  max-width: 992px;
+}
+
+/* header */
+header .ms_top_header, .ms_mylist li a  {
+  text-transform: uppercase;
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+header .ms_top_header>p {
+  font-size: 25px
+}
+
+header .nav>li>a:hover, .nav>li>a:focus {
+  background-color: inherit;
+}
+/* ends header */
+
+/*  general rules sections */
+.ms_section {
+  padding: 40px 0;
+}
+
+.ms_section_jumbo {
+  padding: 30px 0;
+}
+
+.ms_primary {
+  background-color: #1abc9c;
+  color: #FFF;
+}
+
+.ms_secondary {
+  background-color: white;
+  color: black;
+}
+/* fine sections */
+
+/* jumbo */
+.ms_teaser {
+  font-size: 25px;
+  color: white;
+}
+
+.ms_teaser img {
+  height: 200px;
+}
+
+.ms_intro {
+ font-size: 30px;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+/* ends jumbo */
+
+/* portfolio */
+
+.ms_portfolio_item {
+  margin-bottom: 30px;
+}
+
+.ms_portfolio_item img {
+  width: 100%;
+  height: 100%;
+}
+
+.ms_intro .ms_star {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.ms_intro .ms_star i {
+  margin: 15px;
+  font-size: 2em;
+  color: #2c3e50;
+}
+/* NOTE: da inserire da qualche parte */
+.ms_star::before,
+.ms_star::after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #2c3e50;
+  position: relative;
+  top: -9px;
+  border-radius: 4px;
+}
+
+/* about section */
+.ms_about {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* footer */
+footer .footer_section {
+  padding: 40px 0;
+}
+
+footer .company_info {
+  background-color: #3a546c;
+  color: white;
+}
+
+footer .company_credits {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px ){
+  .xs_margin_bottom_30 {
+    margin-bottom: 30px;
+  }
+}
