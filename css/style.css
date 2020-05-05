@@ -3,11 +3,62 @@ body {
   padding-top: 70px;
 }
 
-.wrapper_70 {
+body .wrapper {
   width: 65%;
   margin: 0 auto;
   max-width: 992px;
 }
+
+body .ms_intro {
+ font-size: 30px;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+body .ms_star::before, .ms_star::after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  top: -9px;
+  border-radius: 4px;
+}
+
+#hamnav label, #hamburger {
+  display: none;
+ }
+/* ends general rules */
+
+/*  general rules sections */
+.ms_section {
+  padding: 40px 0;
+}
+
+.ms_section_jumbo {
+  padding: 30px 0;
+}
+
+.ms_primary {
+  background-color: #1abc9c;
+  color: #FFF;
+}
+
+.ms_secondary {
+  background-color: white;
+  color: #2c3e50;
+}
+
+.ms_secondary .ms_star i {
+  color: #2c3e50;
+}
+
+.ms_secondary .ms_star::before,
+.ms_secondary .ms_star::after {
+  background-color: #2c3e50;
+}
+/* ends general rules sections */
 
 /* header */
 header .ms_top_header, .ms_mylist li a  {
@@ -28,46 +79,17 @@ header .nav>li>a:hover, .nav>li>a:focus {
 }
 /* ends header */
 
-/*  general rules sections */
-.ms_section {
-  padding: 40px 0;
-}
-
-.ms_section_jumbo {
-  padding: 30px 0;
-}
-
-.ms_primary {
-  background-color: #1abc9c;
-  color: #FFF;
-}
-
-.ms_secondary {
-  background-color: white;
-  color: black;
-}
-/* fine sections */
-
 /* jumbo */
 .ms_teaser {
   font-size: 25px;
-  color: white;
 }
 
 .ms_teaser img {
   height: 200px;
 }
-
-.ms_intro {
- font-size: 30px;
- text-transform: uppercase;
- text-align: center;
-}
-
 /* ends jumbo */
 
 /* portfolio */
-
 .ms_portfolio_item {
   margin-bottom: 30px;
 }
@@ -85,20 +107,8 @@ header .nav>li>a:hover, .nav>li>a:focus {
 .ms_intro .ms_star i {
   margin: 15px;
   font-size: 2em;
-  color: #2c3e50;
 }
-/* NOTE: da inserire da qualche parte */
-.ms_star::before,
-.ms_star::after {
-  content: "";
-  display: inline-block;
-  width: 70px;
-  height: 4px;
-  background-color: #2c3e50;
-  position: relative;
-  top: -9px;
-  border-radius: 4px;
-}
+/* ends portfolio */
 
 /* about section */
 .ms_about {
@@ -119,6 +129,7 @@ header .nav>li>a:hover, .nav>li>a:focus {
   font-size: 25px;
   font-weight: initial;
 }
+
 .ms_contact_form textarea,
 .ms_contact_form input {
   border: none;
@@ -129,14 +140,21 @@ header .nav>li>a:hover, .nav>li>a:focus {
 /* ends contact section */
 
 /* footer */
-
+footer p {
+  font-size: 20px;
+}
 
 footer .footer_section {
   padding: 40px 0;
   text-align: center;
 }
 
-footer .footer_section ul li i {
+footer .company_info {
+  background-color: #3a546c;
+  color: white;
+}
+
+footer .company_info ul li i {
   height: 50px;
   width: 50px;
   color: white;
@@ -146,23 +164,32 @@ footer .footer_section ul li i {
   border-radius: 50%;
 }
 
-footer p {
-  font-size: 20px;
-}
-
-footer .company_info {
-  background-color: #3a546c;
-  color: white;
-}
-
 footer .company_credits {
   background-color: #2c3e50;
   color: white;
   text-align: center;
 }
+/* ends footer */
 
-@media screen and (max-width: 991px ){
-  .xs_margin_bottom_30 {
-    margin-bottom: 30px;
+/* media query */
+@media screen and (max-width: 768px ){
+  .ms_mylist {
+    display: none;
+   }
+
+  #hamnav input:checked ~ .ms_mylist {
+    display: block;
+  }
+
+  #hamnav {
+    text-align: right;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    font-style: normal;
+    font-size: 2.5em;
+    padding: 9px;
   }
 }
+/* ends media query */

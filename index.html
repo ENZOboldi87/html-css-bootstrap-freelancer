@@ -8,7 +8,7 @@
     <title>Bootstrap freelancer - Giuseppe Rotolo</title>
   </head>
   <body>
-          <!-- header -->
+    <!-- header -->
     <header>
         <div class="ms_top_header navbar-fixed-top">
           <div class="container">
@@ -16,18 +16,21 @@
               <p class="navbar-text">start bootstrap</p>
             </div>
             <div class="col-xs-6">
-              <ul class="nav navbar-right nav-pills ms_mylist ">
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-              </ul>
+              <nav id="hamnav">
+                <label for="hamburger"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger">
+                  <ul class="nav navbar-right nav-pills ms_mylist">
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                  </ul>
+              </nav>
             </div>
           </div>
         </div>
     </header>
-          <!-- ends header -->
-
-          <!--  main -->
+    <!-- ends header -->
+    <!--  main -->
     <main>
       <!-- jumbo -->
       <section class="ms_section_jumbo ms_primary">
@@ -45,7 +48,6 @@
         </div>
       </section>
       <!-- ends jumbo -->
-
       <!-- portofolio -->
       <section class="ms_section ms_secondary">
         <div class="container">
@@ -89,9 +91,8 @@
         </div>
         </div>
       </section>
-          <!-- ends portfolio -->
-
-          <!-- about section -->
+      <!-- ends portfolio -->
+      <!-- about section -->
       <section class="ms_section ms_about ms_primary">
         <div class="wrapper">
           <div class="container-fluid">
@@ -116,11 +117,10 @@
         </div>
       </section>
       <!-- ends about section -->
-
       <!-- contact section -->
-      <section class="ms_section ms_secondary">
+      <section class="ms_section ms_contact ms_secondary">
         <div class="wrapper_70">
-          <div class="container-fluid">
+          <div class="container">
             <div class="ms_intro">
               <h2>contact me</h2>
               <div class="ms_star">
@@ -130,20 +130,20 @@
             <div class="ms_contact_form">
               <form>
                 <div class="form-group">
-                  <label for="input_name">Name</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="">
                 </div>
                 <div class="form-group">
-                  <label for="input_email">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                  <label for="email_address">Email address</label>
+                  <input type="text" class="form-control" id="email_address" placeholder="">
                 </div>
                 <div class="form-group">
-                  <label for="input_phone">Phone Number</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                  <label for="phone_number">Phone Number</label>
+                  <input type="text" class="form-control" id="phone_number" placeholder="">
                 </div>
                 <div class="form-group">
-                  <label for="input_message">Message</label>
-                  <textarea name="name" rows="8" cols="80"></textarea>
+                  <label for="text">Message</label>
+                  <textarea name="name" id="text" rows="8" cols="80"></textarea>
                 </div>
               </form>
             </div>
@@ -152,8 +152,10 @@
       </section>
       <!-- ends contact section -->
     </main>
+    <!-- ends main -->
     <!-- footer -->
     <footer>
+      <!-- company info -->
       <div class="company_info footer_section">
         <div class="container">
           <div class="row">
@@ -183,15 +185,15 @@
           </div>
         </div>
       </div>
+      <!-- ends company info -->
+      <!-- company credits -->
       <div class="company_credits footer_section">
         <div class="container">
           <p class="text-center">Copyright Your Website 2019</p>
-
-
         </div>
       </div>
-
-
+      <!-- ends company credits -->
     </footer>
+    <!-- ends footer -->
   </body>
 </html>
