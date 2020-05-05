@@ -106,9 +106,48 @@ header .nav>li>a:hover, .nav>li>a:focus {
   text-align: center;
 }
 
+.ms_about button {
+  background-color:inherit;
+  border-color: white;
+  color: white;
+}
+/* ends about section */
+
+/* contact section */
+.ms_contact_form label {
+  color: #2c3e50;
+  font-size: 25px;
+  font-weight: initial;
+}
+.ms_contact_form textarea,
+.ms_contact_form input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  width: 100%;
+}
+/* ends contact section */
+
 /* footer */
+
+
 footer .footer_section {
   padding: 40px 0;
+  text-align: center;
+}
+
+footer .footer_section ul li i {
+  height: 50px;
+  width: 50px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+footer p {
+  font-size: 20px;
 }
 
 footer .company_info {
